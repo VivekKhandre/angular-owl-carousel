@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/build/.nvm/v0.11.16/bin/node',
+1 verbose cli   '/home/build/.nvm/v0.11.16/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   './',
+1 verbose cli   '--tag',
+1 verbose cli   'V1.0.1' ]
+2 info using npm@2.3.0
+3 info using node@v0.11.16
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec { raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/home/build/dev/owlcarousel/angular-owl-carousel',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/build/.npm/angularowlcaraousel/1.0.1/package.tgz not in flight; packing
+9 verbose tar pack [ '/home/build/.npm/angularowlcaraousel/1.0.1/package.tgz',
+9 verbose tar pack   '/home/build/dev/owlcarousel/angular-owl-carousel' ]
+10 verbose tarball /home/build/.npm/angularowlcaraousel/1.0.1/package.tgz
+11 verbose folder /home/build/dev/owlcarousel/angular-owl-carousel
+12 info prepublish angularowlcaraousel@1.0.1
+13 verbose addLocalTarball adding from inside cache /home/build/.npm/angularowlcaraousel/1.0.1/package.tgz
+14 silly cache afterAdd angularowlcaraousel@1.0.1
+15 verbose afterAdd /home/build/.npm/angularowlcaraousel/1.0.1/package/package.json not in flight; writing
+16 verbose afterAdd /home/build/.npm/angularowlcaraousel/1.0.1/package/package.json written
+17 silly publish { name: 'angularowlcaraousel',
+17 silly publish   version: '1.0.1',
+17 silly publish   description: 'Angular Owl Carousel',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git://github.com/jonahbron/angular-owl-carousel' },
+17 silly publish   author:
+17 silly publish    { name: 'tvmogul',
+17 silly publish      email: 'tvmogul1@gmail.com',
+17 silly publish      url: 'https://github.com/tvmogul/AngularSuperSlickCarousel' },
+17 silly publish   license: 'MIT',
+17 silly publish   bugs: { url: 'https://github.com/jonahbron/angular-owl-carousel/issues' },
+17 silly publish   homepage: 'https://github.com/jonahbron/angular-owl-carousel',
+17 silly publish   readme: '# Angular Owl Carousel\n\nThis directive allows you to back a Owl Carousel with data from an Angular controller.\n\n*For use with Owl Carousel 2*\n\n## Usage\n\nJavascript:\n\n    // Define app module\n    angular\n        .module(\'myApp\', [\'angular-owl-carousel\']);\n\n    // Create controller\n    angular\n        .module(\'myApp\')\n        .controller(\'MyController\', MyController);\n\n    function MyController() {\n        this.items = [\'item1\', \'item2\'];\n    }\n\nHTML:\n\n    <div ng-controller="MyController">\n        <div owl-carousel="items">\n            <div class="item">{{ item }}</div>\n        </div>\n    </div>\n\n*Note:* There is a bug in Owl on the master branch that breaks this directive.  I\'ve created a branch with the fix here:\n\nhttps://github.com/jonahbron/OwlCarousel2\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'b63f3d523766bfd4cd94058a4bb2123200a89260',
+17 silly publish   _id: 'angularowlcaraousel@1.0.1',
+17 silly publish   _shasum: '20693df8b121846119d3e44cfbbad0e2f309fd00',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name angularowlcaraousel
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry http://registry.npmjs.org/
+21 silly mapToRegistry uri http://registry.npmjs.org/angularowlcaraousel
+22 verbose publish registryBase http://registry.npmjs.org/
+23 silly publish uploading /home/build/.npm/angularowlcaraousel/1.0.1/package.tgz
+24 verbose request uri http://registry.npmjs.org/angularowlcaraousel
+25 verbose request sending authorization for write operation
+26 info attempt registry request try #1 at 9:43:12 AM
+27 verbose request using bearer token for auth
+28 verbose request id 55f010eb7b5ad258
+29 http request PUT http://registry.npmjs.org/angularowlcaraousel
+30 http 403 http://registry.npmjs.org/angularowlcaraousel
+31 verbose headers { 'cache-control': 'max-age=60',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Mon, 30 Nov 2015 22:43:13 GMT',
+31 verbose headers   'x-served-by': 'cache-mel6521-MEL',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1448923392.651432,VS0,VE412',
+31 verbose headers   'content-length': '95',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'proxy-connection': 'keep-alive' }
+32 verbose request invalidating /home/build/.npm/registry.npmjs.org/angularowlcaraousel on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : angularowlcaraousel
+34 verbose stack     at CachingRegistryClient.<anonymous> (/home/build/.nvm/v0.11.16/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:254:14)
+34 verbose stack     at Request._callback (/home/build/.nvm/v0.11.16/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:14)
+34 verbose stack     at Request.self.callback (/home/build/.nvm/v0.11.16/lib/node_modules/npm/node_modules/request/request.js:373:22)
+34 verbose stack     at Request.emit (events.js:110:17)
+34 verbose stack     at Request.<anonymous> (/home/build/.nvm/v0.11.16/lib/node_modules/npm/node_modules/request/request.js:1318:14)
+34 verbose stack     at Request.emit (events.js:129:20)
+34 verbose stack     at IncomingMessage.<anonymous> (/home/build/.nvm/v0.11.16/lib/node_modules/npm/node_modules/request/request.js:1266:12)
+34 verbose stack     at IncomingMessage.emit (events.js:129:20)
+34 verbose stack     at _stream_readable.js:908:16
+34 verbose stack     at process._tickCallback (node.js:355:11)
+35 verbose statusCode 403
+36 verbose pkgid angularowlcaraousel
+37 verbose cwd /home/build/dev/owlcarousel/angular-owl-carousel
+38 error Linux 3.16.0-30-generic
+39 error argv "/home/build/.nvm/v0.11.16/bin/node" "/home/build/.nvm/v0.11.16/bin/npm" "publish" "./" "--tag" "V1.0.1"
+40 error node v0.11.16
+41 error npm  v2.3.0
+42 error code E403
+43 error "You cannot publish over the previously published version 1.0.1." : angularowlcaraousel
+44 error If you need help, you may report this error at:
+44 error     <http://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]

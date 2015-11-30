@@ -1,0 +1,19 @@
+{
+  "name": "angularowlcaraousel",
+  "version": "1.0.1",
+  "description": "Angular Owl Carousel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonahbron/angular-owl-carousel"
+  },
+  "author": "tvmogul <tvmogul1@gmail.com> (https://github.com/tvmogul/AngularSuperSlickCarousel)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonahbron/angular-owl-carousel/issues"
+  },
+  "homepage": "https://github.com/jonahbron/angular-owl-carousel"
+}
